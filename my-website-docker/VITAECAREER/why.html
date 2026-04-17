@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NDQZBCXP6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NDQZBCXP6N');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vitae Careers</title>
+    <style>
+        .active-link {
+            font-weight: bold; /* Example: Make the active link bold */
+            color: blue; /* Example: Change the color of the active link */
+            /* You can add more styles as needed, e.g., background-color, text-decoration: underline; */
+        }
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .mobile-menu-overlay {
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+
+        .mobile-menu-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none; /* Prevents interaction when hidden */
+        }
+
+        .mobile-menu-visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto; /* Allows interaction when visible */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-0">
+                <img src="./vitae_icon.ico" alt="Your Logo" class="w-16 h-16 rounded-full object-cover">
+                <span class="ml-3 text-xl">Vitae Careers</span>
+            </a>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <nav id="main-nav" class="hidden md:flex md:ml-auto flex-row items-center text-base justify-center mt-4 md:mt-0">
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0 " href="index.html">Home</a>
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0" href="About_Us.html" >About Us</a>
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0 active-link" href="why.html">Why It Matters</a>
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0" href="career.html" >Career Assessment </a>
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0" href="gallery.html">Gallery</a>
+                <a class="mr-5 hover:text-gray-900 py-2 md:py-0" href="contact.html">Contact Us</a>
+            </nav>
+
+            <span class="hidden md:inline-flex justify-center mt-2 sm:mt-0 ml-0 sm:ml-auto">
+                <a href="https://www.facebook.com/profile.php?id=61576837301032" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://x.com/VitaeCareers" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                    <span class="inline-block w-5 h-5 scale-[0.85] transform">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor" class="w-full h-full">
+                        <path d="M714.537 549.996L1178.18 0H1071.71L663.55 488.246L328.616 0H0L489.83 703.874L0 1227H106.883L537.996 706.803L891.384 1227H1200L714.537 549.996ZM586.6 642.147L544.718 583.795L152.554 85.2587H270.637L623.302 577.416L665.184 635.769L1071.71 1141.54H953.625L586.6 642.147Z"/>
+                      </svg>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/careercounseloran?igsh=bmxlbjBub2JhY25s" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/cca-a-n-sharma-831787323/" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+
+        <div id="mobile-menu-overlay" class="md:hidden fixed inset-0 bg-gray-900 bg-opacity-95 z-40 hidden mobile-menu-hidden">
+            <div class="flex justify-end p-4">
+                <button id="close-mobile-menu" class="text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center text-xl text-white pt-8">
+                <a class="py-4 hover:text-indigo-300" href="index.html">Home</a>
+                <a class="py-4 hover:text-indigo-300" href="About_Us.html" >About Us</a>
+                <a class="py-4 hover:text-indigo-300 active-link" href="why.html">Why It Matters</a>
+                <a class="py-4 hover:text-indigo-300 " href="career.html" >Career Assessment </a>
+                <a class="py-4 hover:text-indigo-300" href="gallery.html">Gallery</a>
+                <a class="py-4 hover:text-indigo-300" href="contact.html">Contact Us</a>
+                <div class="flex justify-center mt-8">
+                    <a href="https://www.facebook.com/profile.php?id=61576837301032" target="_blank" rel="noopener noreferrer" class="text-white mx-2">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/VitaeCareers" target="_blank" rel="noopener noreferrer" class="text-white mx-2">
+                        <span class="inline-block w-6 h-6 transform">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor" class="w-full h-full">
+                            <path d="M714.537 549.996L1178.18 0H1071.71L663.55 488.246L328.616 0H0L489.83 703.874L0 1227H106.883L537.996 706.803L891.384 1227H1200L714.537 549.996ZM586.6 642.147L544.718 583.795L152.554 85.2587H270.637L623.302 577.416L665.184 635.769L1071.71 1141.54H953.625L586.6 642.147Z"/>
+                          </svg>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/careercounseloran?igsh=bmxlbjBub2JhY25s" target="_blank" rel="noopener noreferrer" class="text-white mx-2">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cca-a-n-sharma-831787323/" target="_blank" rel="noopener noreferrer" class="text-white mx-2">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr >
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const mainNav = document.getElementById('main-nav');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenuOverlay.classList.remove('hidden', 'mobile-menu-hidden');
+                mobileMenuOverlay.classList.add('mobile-menu-visible');
+            });
+
+            closeMobileMenu.addEventListener('click', function() {
+                mobileMenuOverlay.classList.remove('mobile-menu-visible');
+                mobileMenuOverlay.classList.add('mobile-menu-hidden');
+                mobileMenuOverlay.addEventListener('transitionend', function handler() {
+                    mobileMenuOverlay.classList.add('hidden');
+                    mobileMenuOverlay.removeEventListener('transitionend', handler);
+                });
+            });
+
+            // Optional: Close menu when a link is clicked
+            mobileMenuOverlay.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    closeMobileMenu.click();
+                });
+            });
+        });
+    </script>
+    
+    <section class="text-gray-600 body-font py-12 bg-gray-50 rounded-lg shadow-md mb-10">
+        <div class="container px-5 mx-auto">
+            <h2 class="title-font sm:text-3xl text-2xl mb-6 font-bold text-gray-900 leading-relaxed">Why is career counselling important?</h2>
+            <p class="mb-8 leading-relaxed text-lg text-gray-700">
+                Career counselling provides better understanding and clarity about the career. It saves a lot of time, money and avoids frustration caused due to career indecisiveness. A career counselor not only helps the student to find out the most suitable career option but also provide a detailed execution plan.
+            </p>
+
+            <p class="mb-4 leading-relaxed text-lg text-gray-700">
+                <strong class="font-bold text-gray-800">Informed career decisions</strong> - Career counselling helps to make informed career decisions.
+            </p>
+            <p class="mb-4 leading-relaxed text-lg text-gray-700">
+                <strong class="font-bold text-gray-800">Clear Education and Career Road Map</strong> - Students will get a clear educational and career road map. Early-stage career counselling always gives more time for execution.
+            </p>
+            <p class="mb-4 leading-relaxed text-lg text-gray-700">
+                <strong class="font-bold text-gray-800">Career Satisfaction</strong> - Think about to pursue a career that you love to. Career counselor explores your interest areas, personality and abilities and based on that finds out most suitable career option for you.
+            </p>
+            <p class="mb-4 leading-relaxed text-lg text-gray-700">
+                <strong class="font-bold text-gray-800">Career Opportunities</strong> - Today a lot of career opportunities and new aged career options are available. Most of the students and professionals are not aware of these career opportunities, latest trends, salary packages and much more crucial information that plays an important role to select a career option. Trained career counselors always update themselves for all such crucial information and systematically guide students to make the right career decision. A career in data science, a career in artificial intelligence, a career in digital marketing and many newer aged career options.
+            </p><br>
+            <h2 class="title-font sm:text-3xl text-2xl mb-6 font-bold text-gray-900 leading-relaxed">Why Online career counselling?</h2>
+            <p class="mb-8 leading-relaxed text-lg text-gray-700">
+                Online career counselling is the need of the hour. With more than 260 million students, India consists of the majority of the youth population. Nowadays many students are confused about their career paths. We at Vitae Careers often realize that their problems can be addressed with appropriate online career counselling or face to face career counselling. For all the students who are confused about their career path, it would be a wise decision to take a career counselling session with a trained career counselor.
+            </p>
+
+            <h2 class="title-font sm:text-3xl text-2xl mb-6 font-bold text-gray-900 leading-relaxed mt-12">How online career counselling can help?</h2>
+            <p class="mb-8 leading-relaxed text-lg text-gray-700">
+                Whether you are in Delhi, Mumbai, Chennai, Hyderabad etc.? You can find career counselling near your location. Our expert career counselor can help you solve your confusion. Vitae Careers offers online career counselling. It is based on statistical methodology. Our career counselling is available across India. Online career counselling empowers students with latest career updates and a career roadmap for the future. Online career counselling has come as a blessing in disguise. Now students and professionals can take up online career counselling from anywhere in the world. Vitae Careers online career counselling and career assessment platform makes career counselling accessible to those who need it most on the ground.
+            </p>
+
+            <h3 class="title-font sm:text-xl text-lg mb-4 font-semibold text-gray-800 leading-relaxed mt-8">The different stages when online career counselling can be taken:</h3>
+            <ul class="list-disc list-inside mb-8 text-lg text-gray-700 leading-relaxed pl-4">
+                <li class="mb-2">Career counselling for 5th class to find out your multiple intelligence, aptitude and learning style</li>
+                <li class="mb-2">Career Counselling for 10th class to find out best subject streams after 10th and most suitable career path</li>
+                <li class="mb-2">Career Counselling for 12th students to find out the best career option after 12th and education road map</li>
+                <li class="mb-2">Career Counselling for Graduates to find out the best career option after graduation with higher studies education road map.</li>
+                <li class="mb-2">Career Counselling for professionals for early and mid-career shift planning.</li>
+            </ul>
+
+            <h3 class="title-font sm:text-xl text-lg mb-4 font-semibold text-gray-800 leading-relaxed mt-8">Online career counselling for working professionals</h3>
+            <p class="mb-8 leading-relaxed text-lg text-gray-700">
+                According to Indeed survey, 40% of the working professionals are not satisfied with their jobs. A large portion of professionals is planning to switch their careers. Mostly the reason is not their abilities but career interest. Online career counselling for working professionals can bridge this gap. It will help working professionals to find out best next move or shift in their career with a detailed execution plan for the next 10 years. Online career counselling for working professionals is different than student career counselling and it is delivered by an expert mentor. Vitae Careers extends recognized career counselling solutions for working professionals.
+            </p>
+
+            
+        </div>
+    </section>
+    <footer class="text-gray-600 body-font py-12">
+        <div class="container px-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col text-center md:text-left">
+            <div class="w-full md:w-1/4 lg:w-1/5 flex-shrink-0 md:mx-0 mx-auto mb-8 md:mb-0">
+                <h1 class="text-lg font-medium text-gray-900 mb-3">About Us</h1>
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed max-w-sm mx-auto md:mx-0">
+                    We, Vitae Career Enterprises cater career counselling services mainly in Lucknow and Balrampur (UP) to help school and college going students and professionals in deciding their career. We believe in - "Timely Acquired Career Guidance Gives Success."
+                </p>
+            </div>
+    
+            <div class="flex-grow flex flex-wrap md:pl-8 -mb-10 md:mt-0 mt-10 text-center md:text-left md:justify-between">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-10">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="About_Us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="why.html">Why It Matters</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="career.html">Career Assessment</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 py-2 block" href="blog.html">Blog</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4 mb-10"> <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 flex items-center justify-center md:justify-start py-2">
+                                <i class="fas fa-phone-alt mr-2 text-gray-500"></i>
+                                <span class="ml-1 leading-relaxed">+91 9335879877</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 flex items-center justify-center md:justify-start py-2">
+                                <i class="fas fa-map-marker-alt mr-2 text-gray-500"></i>
+                                <span class="ml-1 leading-relaxed">C-703, The Grace, Sector-B, Sushant Golf City, Lucknow-226030</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 flex items-center justify-center md:justify-start py-2">
+                                <i class="fas fa-envelope mr-2 text-gray-500"></i>
+                                <span class="ml-1 leading-relaxed">careervitae2025@gmail.com</span>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-10">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Timings</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <p class="text-gray-600 leading-relaxed py-2">Monday-Friday : 17:00 PM – 20:00 PM</p>
+                        </li>
+                        <li>
+                            <p class="text-gray-600 leading-relaxed py-2">Saturday : Closed</p>
+                        </li>
+                        <li>
+                            <p class="text-gray-600 leading-relaxed py-2">Sunday : 10:00 AM – 14:30 PM</p>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100 py-4">
+            <div class="container mx-auto px-5 flex flex-wrap flex-col sm:flex-row justify-center items-center">
+                <p class="text-gray-500 text-sm text-center sm:text-left leading-relaxed">© 2025 VitaeCareers —
+                    <a href="https://twitter.com" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@vitaecareers</a>
+                </p>
+                <span class="inline-flex justify-center mt-2 sm:mt-0 ml-0 sm:ml-auto">
+                    <a href="https://www.facebook.com/profile.php?id=61576837301032" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/VitaeCareers" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                        <span class="inline-block w-5 h-5 scale-[0.85] transform">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor" class="w-full h-full">
+                            <path d="M714.537 549.996L1178.18 0H1071.71L663.55 488.246L328.616 0H0L489.83 703.874L0 1227H106.883L537.996 706.803L891.384 1227H1200L714.537 549.996ZM586.6 642.147L544.718 583.795L152.554 85.2587H270.637L623.302 577.416L665.184 635.769L1071.71 1141.54H953.625L586.6 642.147Z"/>
+                          </svg>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/careercounseloran?igsh=bmxlbjBub2JhY25s" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cca-a-n-sharma-831787323/" target="_blank" rel="noopener noreferrer" class="text-gray-500 ml-2">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
